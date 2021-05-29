@@ -1,0 +1,148 @@
+body
+  overflow-x: hidden
+  background-color: #f5f5f5
+  font-family: 'Montserrat', sans-serif
+
+.f-oswald
+  font-family: 'Oswald', sans-serif
+button
+  font-family: 'Oswald', sans-serif
+
+.simpleBook
+  opacity: 0
+  pointer-events: none
+  left: 30px
+  right: 30px
+  top: 110px
+  position: fixed
+  transition: all .2s linear
+  height: 80vh
+  overflow: auto
+  z-index: 50
+  &__close
+    position: absolute
+    right: 20px
+    top: 20px
+    cursor: pointer
+  &.simpleBookActive
+    opacity: 1
+    top: 100px
+    pointer-events: all
+
+
+.q-field--outlined .q-field__control:before
+  border-color: $inputBorder !important
+.text-weight-600
+  font-weight: 600
+.container
+  max-width: 1180px
+  padding: 0 15px
+  margin: 0 auto
+  background: rgba(230, 230, 230, 0.58)
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15)
+  border-radius: 15px
+  overflow-x: hidden
+  &-wrapper
+    padding: 0 120px 90px 120px
+
+@media (max-width: 1023px)
+  .container
+    &-wrapper
+      padding: 20px 0
+.section-title
+
+  position: relative
+  padding-left: 95px
+  margin-bottom: 125px
+  &.no-1920
+    width: unset
+  &::before
+    position: absolute
+    content: url(../assets/section-title.svg)
+    left: 0
+    bottom: 50%
+    transform: translateY(50%)
+    z-index: 0
+  &::after
+    position: absolute
+    content: attr(data-text)
+    font-size: 44px
+    font-weight: bold
+    color: $primary
+    left: 75px
+    bottom: 50%
+    transform: translateY(68%)
+    z-index: 10
+  p
+    width: 1920px
+    position: relative
+    left: -36px
+    font-size: 80px
+    color: #ffffff
+    line-height: 100%
+
+
+    font-weight: 900
+    &::after
+      position: absolute
+      content: ''
+      width: 99%
+      top: 60%
+      transform: translateY(-40%)
+      height: 2px
+      background-color: $accent
+
+
+@media (max-width: 1023px)
+  .section-title
+
+
+    p
+      font-size: 80px
+      width: 1920px
+      &::after
+        content: none
+    &::after
+      font-size: 24px
+      left: 70px
+      transform: translateY(50%)
+
+
+
+.grid
+  display: grid
+  &.grid-2
+    grid-template-columns: 1fr 1fr
+  &.grid-3
+    grid-template-columns: repeat(auto-fill,minmax(450px,1fr))
+  &.grid-gap-15
+    grid-gap: 15px
+
+@media (max-width: 500px)
+  .grid
+    &.grid-3
+      grid-template-columns: 1fr
+@media (max-width: 1023px)
+  .grid
+    &.grid-2
+      grid-template-columns: 1fr
+.mb-100
+  margin-bottom: 100px
+
+.mb-120
+  margin-bottom: 120px
+.pt-100
+  padding-top: 100px
+.mt-100
+  margin-top: 100px
+
+.card-body
+  min-height: 200px
+  text-align: center
+
+@media (max-width: 768px)
+
+  .card-body
+    min-height: 130px
+    & .text-h5
+      font-size: 24px

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= productName %></title>
+
+    <meta charset="utf-8">
+    <meta name="description" content="<%= productDescription %>">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width<% if (ctx.mode.cordova || ctx.mode.capacitor) { %>, viewport-fit=cover<% } %>">
+
+    <link rel="icon" type="image/png" sizes="128x128" href="icons/favicon-128x128.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="icon" type="image/ico" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- DO NOT touch the following DIV -->
+    <div id="q-app"></div>
+  <script src="//widget.simplybook.it/v2/widget/widget.js"></script>
+  <div id="simpleBook" class="simpleBook">
+    <p onclick="closeSimpleBook()" class="simpleBook__close">X</p>
+    <script>var widget = new SimplybookWidget({"widget_type":"iframe","url":"https:\/\/nicobrunner.simplybook.it","theme":"bookingtroll","theme_settings":{"timeline_hide_unavailable":"1","timeline_show_end_time":"0","timeline_modern_display":"as_slots","sb_base_color":"#009cff","display_item_mode":"block","sb_review_image":"","dark_font_color":"#2d3a58","light_font_color":"#ffffff","btn_color_1":"#ff3f6c","sb_company_label_color":"#ffffff","hide_img_mode":"0","sb_busy":"#dad2ce","sb_available":"#d3e0f1"},"timeline":"modern_week","datepicker":"top_calendar","is_rtl":false,"app_config":{"allow_switch_to_ada":0,"predefined":[]}});</script>
+  </div>
+  <script>
+   function closeSimpleBook(){
+      let sb_div = document.getElementById('simpleBook')
+      sb_div.classList.remove('simpleBookActive')
+    }
+  </script>
+
+  </body>
+</html>
