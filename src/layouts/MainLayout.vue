@@ -87,8 +87,9 @@
         </div>
         <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 flex items-center justify-between">
           <p class="flex items-center justify-center inline-block q-mb-none">
-            <router-link class="text-white q-mr-lg text-weight-600" to="impressum">Impressum</router-link>
-            <router-link class="text-white q-mr-lg text-weight-600" to="datenschutz">Datenschutz</router-link>
+            <router-link class="text-white q-mr-lg text-weight-600" to="/contacts">Kontakte</router-link>
+            <router-link class="text-white q-mr-lg text-weight-600" to="/impressum">Impressum</router-link>
+            <router-link class="text-white q-mr-lg text-weight-600" to="/datenschutz">Datenschutz</router-link>
 
 
           </p>

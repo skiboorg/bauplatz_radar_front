@@ -28,7 +28,7 @@
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 q-pl-lg-sm q-pl-md-sm q-pl-sm-none q-pl-xs-none relative-position ">
               <p class="text-primary q-mb-xs text-weight-600">Preis</p>
-            <q-range dense v-model="range" :min="0" :max="2000" color="accent"/>
+            <q-range dense v-model="range" :min="4000" :max="500000" color="accent"/>
               <div class="flex items-end justify-evenly search-form__range q-mb-lg-sm q-mb-md-sm q-mb-sm-md q-mb-lg-lg">
                 <p class="no-margin text-caption text-primary text-weight-600">von <span class="text-accent text-weight-bolder text-body1">{{range.min}}</span> €</p>
                 <p class="no-margin text-caption text-primary text-weight-600">vor <span class="text-accent text-weight-bolder text-body1">{{range.max}}</span> €</p>
@@ -217,8 +217,8 @@ export default {
     return {
       model: null,
       range: {
-        min: 500,
-        max: 1500
+        min: 15000,
+        max: 500000
       },
       options: [
         'Google', 'Facebook', 'Twitter', 'Apple', 'Oracle'

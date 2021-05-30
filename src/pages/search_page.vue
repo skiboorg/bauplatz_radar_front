@@ -139,8 +139,8 @@ export default {
       slide:1,
       model: null,
       range: {
-        min: 500,
-        max: 1500
+        min: 1200,
+        max: 50000
       },
       options: [
         'Google', 'Facebook', 'Twitter', 'Apple', 'Oracle'
