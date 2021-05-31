@@ -81,19 +81,21 @@
     </div>
     <footer style="background: #062034">
       <div class="row q-px-sm q-py-xl text-white">
-        <div class="col-lg-9 col-md-8 col-sm-12 col-xs-12 q-mb-lg-none q-mb-md-none q-mb-sm-lg q-mb-xs-lg flex items-center text-weight-600">
+        <div class="col-lg-8 col-md-7 col-sm-12 col-xs-12 q-mb-lg-none q-mb-md-none q-mb-sm-lg q-mb-xs-lg
+        justify-lg-between justify-md-between justify-sm-between justify-xs-center
+         flex items-center text-weight-600">
           Copyright © 2021. All rights reserved.
 
         </div>
-        <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 flex items-center justify-between">
-          <p class="flex items-center justify-center inline-block q-mb-none">
+        <div class="col-lg-4 col-md-5 col-sm-12 col-xs-12 flex items-center justify-lg-between justify-md-between justify-sm-between justify-xs-center ">
+          <p class="flex items-center justify-center inline-block q-mb-lg-none q-mb-md-none q-mb-sm-lg q-mb-xs-lg">
             <router-link class="text-white q-mr-lg text-weight-600" to="/contacts">Kontakte</router-link>
             <router-link class="text-white q-mr-lg text-weight-600" to="/impressum">Impressum</router-link>
             <router-link class="text-white q-mr-lg text-weight-600" to="/datenschutz">Datenschutz</router-link>
 
 
           </p>
-          <p class="flex items-center justify-center inline-block q-mb-none">
+          <p class="flex items-center justify-center footer-icons q-mb-none text-center">
             <a class="text-white q-mr-md" href="#">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M21 0H3C1.3455 0 0 1.3455 0 3V21C0 22.6545 1.3455 24 3 24H12V15.75H9V12H12V9C12 6.5145 14.0145 4.5 16.5 4.5H19.5V8.25H18C17.172 8.25 16.5 8.172 16.5 9V12H20.25L18.75 15.75H16.5V24H21C22.6545 24 24 22.6545 24 21V3C24 1.3455 22.6545 0 21 0Z" fill="#DD9706"/>
